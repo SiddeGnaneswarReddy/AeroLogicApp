@@ -32,7 +32,7 @@ export default function App() {
 
     try {
       // Send the user's input to our Python API
-      const response = await fetch('https://aerologic-backend.onrender.com', {
+      const response = await fetch('https://aerologic-backend.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

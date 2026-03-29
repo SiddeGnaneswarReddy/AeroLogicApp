@@ -6,7 +6,7 @@ import traceback
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # 1. DEFINE FEATURES GLOBALLY (This prevents the NameError)
 features = ['Airline', 'Origin', 'Dest', 'Departure_Hour']
